@@ -1,0 +1,8 @@
+{
+    "name": "abuseio/parser-junkemailfilter",
+    "description": "Parser addon for handling notifications from junkemailfilter",
+    "require": {
+        "php": ">=5.4.0",
+        "another-vendor/package": "1.*"
+    }
+}
