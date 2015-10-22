@@ -2,10 +2,6 @@
 
 namespace AbuseIO\Parsers;
 
-use Ddeboer\DataImport\Reader;
-use Ddeboer\DataImport\Writer;
-use Ddeboer\DataImport\Filter;
-
 class Junkemailfilter extends Parser
 {
     /**
@@ -64,3 +60,4 @@ class Junkemailfilter extends Parser
         return $this->success();
     }
 }
+
