@@ -5,7 +5,7 @@ namespace AbuseIO\Parsers;
 class Junkemailfilter extends Parser
 {
     /**
-     * Create a new Blocklistde instance
+     * Create a new Junkemailfilter instance
      */
     public function __construct($parsedMail, $arfMail)
     {
