@@ -1,6 +1,7 @@
 <?php
 
 namespace AbuseIO\Parsers;
+
 use AbuseIO\Models\Incident;
 
 /**
@@ -40,7 +41,7 @@ class Junkemailfilter extends Parser
                     if (($this->hasRequiredFields($report) === true) &&
                         ($report['Feedback-Type'] == 'abuse')
                     ) {
-                        // Event has all requirements met, filter and add!
+                        // incident has all requirements met, filter and add!
                         $report = $this->applyFilters($report);
 
                         $report['evidence'] = $this->arfMail['evidence'];
@@ -56,7 +57,7 @@ class Junkemailfilter extends Parser
                         $incident->timestamp   = strtotime($report['Received-Date']);
                         $incident->information = json_encode($report);
 
-                        $this->events[] = $incident;
+                        $this->incidents[] = $incident;
 
                     }
                 } else {
